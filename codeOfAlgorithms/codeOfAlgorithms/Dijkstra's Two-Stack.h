@@ -1,5 +1,6 @@
 #pragma once
-
+#ifndef Dijkstra_s_Two_Stack_H
+#define Dijkstra_s_Two_Stack_H
 
 #include <stack>
 #include <string>
@@ -22,3 +23,5 @@ public:
 private:
 	string _str;
 };
+
+#endif // !Dijkstra_s_Two_Stack_H

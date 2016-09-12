@@ -31,3 +31,5 @@
 *.db
 *.filters
 *.vcxproj
+*.idb
+*.tlog

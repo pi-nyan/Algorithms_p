@@ -1,17 +1,28 @@
 #include <iostream>
 #include <string>
-#include "Dijkstra's Two-Stack.h"
+#include <fstream>
+#include "FixedCapacityStackOfStrings.h"
 using namespace std;
 
 int main()
 {
-	//表达式必须被括号括全
-	string s = "((((685.3+3242.3)*29.3)+(11+43.55))+sqrt(100))";
-	double result;
-	Evaluate *e = new Evaluate(s);
-	result = e->expressionEvaluation();
-	cout.precision(15);
-	cout<<result << endl;
-	delete e;
+	FixedCapacityStackOfStrings s(100);
+	ifstream fin("tobe.txt", ios::in | ios::binary);
+	string item;
+	while (!fin.eof())
+	{
+		fin >> item;
+		if (item != "-")
+		{
+			s.push(item);
+		}
+		else if (fin.eof())
+		{
+			cout << s.pop() << " ";
+		}
+	}
+	cout << endl;
+	cout << s.size() << endl;
 	return 0;
+
 }
