@@ -27,10 +27,3 @@
 *.exe
 *.out
 *.app
-*.opendb
-*.db
-*.filters
-*.vcxproj
-*.idb
-*.tlog
-*.sln
