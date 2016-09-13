@@ -1,7 +1,6 @@
 #pragma once
 #ifndef FixedCapacityStack_H
 #define FixedCapacityStack_H
-
 #include <vector>
 using namespace std;
 
@@ -17,13 +16,8 @@ public:
 
 	bool isEmpty();
 	int size();
-
 private:
 	vector<T> vs;
 	int N;
 };
-
-
-
-
 #endif

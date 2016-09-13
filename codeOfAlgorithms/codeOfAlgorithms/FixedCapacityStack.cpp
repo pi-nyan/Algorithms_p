@@ -3,13 +3,13 @@
 template<typename T>
 FixedCapacityStack<T>::FixedCapacityStack(int cap) :N(0)
 {
-	
+	vs.assign(cap, (T)0);
 }
 
 template<typename T>
 FixedCapacityStack<T>::~FixedCapacityStack()
 {
-	delete vs;
+
 }
 
 template<typename T>
