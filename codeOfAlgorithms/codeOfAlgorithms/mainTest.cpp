@@ -1,12 +1,14 @@
 #include <iostream>
 #include <string>
 #include <fstream>
-#include "FixedCapacityStackOfStrings.h"
+#include <stack>
+#include "FixedCapacityStack.h"
+#include "FixedCapacityStack.cpp"
 using namespace std;
 
 int main()
 {
-	FixedCapacityStackOfStrings s(100);
+	FixedCapacityStack<string> s(100);
 	ifstream fin;
 	fin.open("tobe.txt", ios::in | ios::binary);
 
