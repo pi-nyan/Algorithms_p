@@ -24,7 +24,7 @@ int main()
 		}
 	}
 	cout << endl;
-	cout << s.size() << endl;
+	cout << s.size() <<"left on stack"<< endl;
 	fin.close();
 	system("pause");
 	return 0;
