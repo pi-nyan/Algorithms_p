@@ -1,5 +1,4 @@
 #pragma once
-
 #ifndef FixedCapacityStackOfStrings_H
 #define FixedCapacityStackOfStrings_H
 
@@ -22,8 +21,5 @@ public:
 private:
 	int N;
 	vector<string> s;
-
 };
-
-
 #endif
