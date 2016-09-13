@@ -8,7 +8,7 @@ template<typename T>
 class FixedCapacityStack
 {
 public:
-	FixedCapacityStack(int cap);
+	FixedCapacityStack();
 	~FixedCapacityStack();
 
 	void push(T item);
@@ -17,7 +17,8 @@ public:
 	bool isEmpty();
 	int size();
 private:
-	vector<T> vs;
+	vector<T> *vs;
 	int N;
+	T *_tmp;
 };
 #endif

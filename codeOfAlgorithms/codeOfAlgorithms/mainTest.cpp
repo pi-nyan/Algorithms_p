@@ -8,7 +8,7 @@ using namespace std;
 
 int main()
 {
-	FixedCapacityStack<string> s(100);
+	FixedCapacityStack<string> *s = new FixedCapacityStack<string>;
 	ifstream fin;
 	fin.open("tobe.txt", ios::in | ios::binary);
 
@@ -18,15 +18,16 @@ int main()
 		fin >> item;
 		if (item != "-")
 		{
-			s.push(item);
+			s->push(item);
 		}
 		else if (!fin.eof())
 		{
-			cout << s.pop() << " ";
+			cout << s->pop() << " ";
 		}
 	}
 	cout << endl;
-	cout << s.size() <<"left on stack"<< endl;
+	cout << s->size() <<" left on stack"<< endl;
+	delete s;
 	fin.close();
 	system("pause");
 	return 0;
