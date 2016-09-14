@@ -9,12 +9,13 @@ template<typename T>
 ResizingArrayStack<T>::ResizingArrayStack():N(0),_aryLength(1)
 {
 	_ary = new T[_aryLength];
+	pt(_ary);
 }
 
 template<typename T>
 inline ResizingArrayStack<T>::~ResizingArrayStack()
 {
-	delete[] _ary;
+
 }
 
 template<typename T>
@@ -37,15 +38,13 @@ inline void ResizingArrayStack<T>::push(T item)
 		_resize(2 * _aryLength);
 	}
 	/**(_ary[N++]) = item;*/
-	_ary[N] = item;
-	N++;
+	_ary[N++] = item;
 }
 
 template<typename T>
 inline T ResizingArrayStack<T>::pop()
 {
-	N--;
-	T _item = _ary[N];
+	T _item = _ary[--N];
 	_ary[N] = _ary[N+1];
 	if (N > 0 && N == _aryLength / 4)
 	{
@@ -58,14 +57,15 @@ template<typename T>
 inline void ResizingArrayStack<T>::_resize(int maxa)
 {
 	T *__tmp = new T[maxa];
+	std::unique_ptr<T> ptr(__tmp);
+
 	for (auto i = 0; i < N; i++)
 	{
 		__tmp[i] = _ary[i];
 	}
 	_ary = __tmp;
 	_aryLength = maxa;
-	__tmp = nullptr;
-	/*delete[] __tmp;*/
+	ptr = nullptr;
 }
 
 template<typename T>

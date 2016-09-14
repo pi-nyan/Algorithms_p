@@ -2,6 +2,8 @@
 #ifndef ResizingArrayStack_H
 #define ResizingArrayStack_H
 
+#include <memory>
+
 template<typename T>
 class ResizingArrayStack
 {
@@ -29,6 +31,7 @@ private:
 	int _aryLength;
 	void _resize(int maxa);
 	int N;
+	std::unique_ptr<T> pt;
 	T *_ary;
 };
 
