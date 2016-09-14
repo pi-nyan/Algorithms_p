@@ -67,19 +67,19 @@ inline void ResizingArrayStack<T>::_resize(int maxa)
 }
 
 template<typename T>
-inline bool ResizingArrayStack<T>::Iterator::hasNext()
+inline bool ResizingArrayStack<T>::sIterator::hasNext()
 {
 	return i>0;
 }
 
 template<typename T>
-inline T ResizingArrayStack<T>::Iterator::next()
+inline T ResizingArrayStack<T>::sIterator::next()
 {
 	return _ary[--i];
 }
 
 template<typename T>
-inline void ResizingArrayStack<T>::Iterator::remove()
+inline void ResizingArrayStack<T>::sIterator::remove()
 {
 
 }
