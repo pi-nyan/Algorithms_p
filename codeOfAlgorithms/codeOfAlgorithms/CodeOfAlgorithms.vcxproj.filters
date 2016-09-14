@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Test">
+      <UniqueIdentifier>{e68ccd5f-39ed-4f84-838f-1249bebaba0a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Dijkstra%27s Two-Stack.cpp">
@@ -27,6 +30,12 @@
     <ClCompile Include="mainTest.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="Test_ResizingArrayStack.h">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="Test_ResizingArrayStack.cpp">
+      <Filter>Test</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Dijkstra%27s Two-Stack.h">
@@ -36,6 +45,12 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="FixedCapacityStackOfStrings.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ResizingArrayStack.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ResizingArrayStack.ipl.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
