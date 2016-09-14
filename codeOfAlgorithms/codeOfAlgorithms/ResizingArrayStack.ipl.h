@@ -36,16 +36,13 @@ inline void ResizingArrayStack<T>::push(T item)
 	{
 		_resize(2 * _aryLength);
 	}
-	/**(_ary[N++]) = item;*/
-	_ary[N] = item;
-	N++;
+	_ary[N++] = item;
 }
 
 template<typename T>
 inline T ResizingArrayStack<T>::pop()
 {
-	N--;
-	T _item = _ary[N];
+	T _item = _ary[--N];
 	_ary[N] = _ary[N+1];
 	if (N > 0 && N == _aryLength / 4)
 	{
@@ -62,6 +59,7 @@ inline void ResizingArrayStack<T>::_resize(int maxa)
 	{
 		__tmp[i] = _ary[i];
 	}
+	delete[] _ary;
 	_ary = __tmp;
 	_aryLength = maxa;
 	__tmp = nullptr;
