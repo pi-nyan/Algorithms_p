@@ -15,7 +15,7 @@ public:
 	void push(T item);
 	T pop();
 
-	typename class sIterator
+	class sIterator
 	{
 	public:
 		bool hasNext();
