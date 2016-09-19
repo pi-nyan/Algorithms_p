@@ -20,6 +20,6 @@ public:
 
 private:
 	int N;
-	vector<string> s;
+	string *s;
 };
 #endif

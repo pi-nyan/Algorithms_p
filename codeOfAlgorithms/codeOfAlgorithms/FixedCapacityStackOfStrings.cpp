@@ -2,11 +2,12 @@
 
 FixedCapacityStackOfStrings::FixedCapacityStackOfStrings(int cap):N(0)
 {
-	s.assign(cap, "");
+	s = new string[cap];
 }
 
 FixedCapacityStackOfStrings::~FixedCapacityStackOfStrings()
 {
+	delete[] s;
 }
 
 void FixedCapacityStackOfStrings::push(string item)

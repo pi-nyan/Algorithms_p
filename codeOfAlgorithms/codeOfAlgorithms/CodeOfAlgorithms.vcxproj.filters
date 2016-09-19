@@ -39,6 +39,9 @@
     <ClCompile Include="Test_FixedCapacityStack.cpp">
       <Filter>Test</Filter>
     </ClCompile>
+    <ClCompile Include="Test_FixedCapacityStackOfStrings.cpp">
+      <Filter>Test</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Dijkstra%27s Two-Stack.h">
@@ -57,6 +60,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="Test_FixedCapacityStack.h">
+      <Filter>Test</Filter>
+    </ClInclude>
+    <ClInclude Include="Test_FixedCapacityStackOfStrings.h">
       <Filter>Test</Filter>
     </ClInclude>
   </ItemGroup>
