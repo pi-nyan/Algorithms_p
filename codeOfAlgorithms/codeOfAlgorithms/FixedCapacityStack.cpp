@@ -1,33 +1,27 @@
 #include "FixedCapacityStack.h"
 
 template<typename T>
-FixedCapacityStack<T>::FixedCapacityStack():N(0)
+FixedCapacityStack<T>::FixedCapacityStack(int xarys):N(0)
 {
-	vs = new vector<T>;
-	_tmp = new T;
+	_vs = new T[xarys];
 }
 
 template<typename T>
 FixedCapacityStack<T>::~FixedCapacityStack()
 {
-	delete vs;
-	delete _tmp;
+	delete[] _vs;
 }
 
 template<typename T>
 void FixedCapacityStack<T>::push(T item)
 {
-	vs->push_back(item);
-	N++;
+	_vs[N++] = item;
 }
 
 template<typename T>
 T FixedCapacityStack<T>::pop()
 {
-	*_tmp = vs->back();
-	vs->pop_back();
-	N--;
-	return *_tmp;
+	return _vs[--N];
 }
 
 template<typename T>

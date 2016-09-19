@@ -114,6 +114,7 @@
     <ClCompile Include="FixedCapacityStack.cpp" />
     <ClCompile Include="FixedCapacityStackOfStrings.cpp" />
     <ClCompile Include="mainTest.cpp" />
+    <ClCompile Include="Test_FixedCapacityStack.cpp" />
     <ClCompile Include="Test_ResizingArrayStack.h" />
     <ClCompile Include="Test_ResizingArrayStack.cpp" />
   </ItemGroup>
@@ -123,6 +124,7 @@
     <ClInclude Include="FixedCapacityStackOfStrings.h" />
     <ClInclude Include="ResizingArrayStack.h" />
     <ClInclude Include="ResizingArrayStack.ipl.h" />
+    <ClInclude Include="Test_FixedCapacityStack.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

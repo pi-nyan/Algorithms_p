@@ -1,14 +1,12 @@
 #pragma once
 #ifndef FixedCapacityStack_H
 #define FixedCapacityStack_H
-#include <vector>
-using namespace std;
 
 template<typename T>
 class FixedCapacityStack
 {
 public:
-	FixedCapacityStack();
+	FixedCapacityStack(int xarys);
 	~FixedCapacityStack();
 
 	void push(T item);
@@ -17,8 +15,7 @@ public:
 	bool isEmpty();
 	int size();
 private:
-	vector<T> *vs;
+	T *_vs;
 	int N;
-	T *_tmp;
 };
 #endif

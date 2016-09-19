@@ -36,6 +36,9 @@
     <ClCompile Include="Test_ResizingArrayStack.cpp">
       <Filter>Test</Filter>
     </ClCompile>
+    <ClCompile Include="Test_FixedCapacityStack.cpp">
+      <Filter>Test</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Dijkstra%27s Two-Stack.h">
@@ -52,6 +55,9 @@
     </ClInclude>
     <ClInclude Include="ResizingArrayStack.ipl.h">
       <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Test_FixedCapacityStack.h">
+      <Filter>Test</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
