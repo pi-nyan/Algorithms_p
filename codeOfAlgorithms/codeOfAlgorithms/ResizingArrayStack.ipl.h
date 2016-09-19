@@ -66,23 +66,5 @@ inline void ResizingArrayStack<T>::_resize(int maxa)
 	/*delete[] __tmp;*/
 }
 
-template<typename T>
-bool ResizingArrayStack<T>::sIterator::hasNext()
-{
-	return i>0;
-}
-
-template<typename T>
-T ResizingArrayStack<T>::sIterator::next()
-{
-	return _ary[--i];
-}
-
-template<typename T>
-void ResizingArrayStack<T>::sIterator::remove()
-{
-
-}
-
 
 #endif
