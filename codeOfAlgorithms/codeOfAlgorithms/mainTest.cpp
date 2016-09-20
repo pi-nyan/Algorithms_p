@@ -6,7 +6,7 @@ int main()
 {
 	//AlgorithmsTest::tResizingArrayStack();
 	//AlgorithmsTest::tFixedCapacityStack();
-	AlgorithmsTest::tFixedCapacityStackOfStack();
+	//AlgorithmsTest::tFixedCapacityStackOfStack();
 	system("pause");
 	return 0;
 

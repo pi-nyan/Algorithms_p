@@ -120,11 +120,14 @@
     <ClCompile Include="Test_ResizingArrayStack.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AgrStack.ipl.h" />
     <ClInclude Include="Dijkstra%27s Two-Stack.h" />
     <ClInclude Include="FixedCapacityStack.h" />
     <ClInclude Include="FixedCapacityStackOfStrings.h" />
     <ClInclude Include="ResizingArrayStack.h" />
     <ClInclude Include="ResizingArrayStack.ipl.h" />
+    <ClInclude Include="AgrStack.h" />
+    <ClInclude Include="Test_AgrStack.h" />
     <ClInclude Include="Test_FixedCapacityStack.h" />
     <ClInclude Include="Test_FixedCapacityStackOfStrings.h" />
   </ItemGroup>

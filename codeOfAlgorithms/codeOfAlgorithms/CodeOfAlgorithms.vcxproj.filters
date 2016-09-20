@@ -65,5 +65,14 @@
     <ClInclude Include="Test_FixedCapacityStackOfStrings.h">
       <Filter>Test</Filter>
     </ClInclude>
+    <ClInclude Include="AgrStack.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="AgrStack.ipl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Test_AgrStack.h">
+      <Filter>Test</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
