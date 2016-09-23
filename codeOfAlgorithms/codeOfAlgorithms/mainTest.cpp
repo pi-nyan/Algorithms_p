@@ -2,6 +2,7 @@
 #include "Test_FixedCapacityStack.h"
 #include "Test_FixedCapacityStackOfStrings.h"
 #include "Test_AgrStack.h"
+#include "Test_AgrQueue.h"
 
 int main()
 {
@@ -9,6 +10,7 @@ int main()
 	//AlgorithmsTest::tFixedCapacityStack();
 	//AlgorithmsTest::tFixedCapacityStackOfStack();
 	AlgorithmsTest::tAgrStack();
+	AlgorithmsTest::tAgrQueue();
 	system("pause");
 	return 0;
 

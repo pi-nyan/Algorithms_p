@@ -45,6 +45,9 @@
     <ClCompile Include="Test_AgrStack.cpp">
       <Filter>Test</Filter>
     </ClCompile>
+    <ClCompile Include="Test_AgrQueue.cpp">
+      <Filter>Test</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Dijkstra%27s Two-Stack.h">
@@ -75,6 +78,15 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="Test_AgrStack.h">
+      <Filter>Test</Filter>
+    </ClInclude>
+    <ClInclude Include="AgrQueue.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="AgrQueue.ipl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Test_AgrQueue.h">
       <Filter>Test</Filter>
     </ClInclude>
   </ItemGroup>
