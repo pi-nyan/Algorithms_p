@@ -4,9 +4,9 @@
 
 #include "AgrStack.h"
 template<typename T>
-aStack<T>::aStack() :N(0)
+aStack<T>::aStack() :N(0),_first(nullptr)
 {
-	_first = new Node;
+
 }
 
 template<typename T>

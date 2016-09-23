@@ -21,7 +21,7 @@ private:
 		Node *next;
 		T _nodeItem;
 	};
-	Node _first;
+	Node *_first;
 	int N;
 };
 
