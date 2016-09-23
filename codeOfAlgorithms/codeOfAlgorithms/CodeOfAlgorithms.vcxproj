@@ -114,6 +114,7 @@
     <ClCompile Include="FixedCapacityStack.cpp" />
     <ClCompile Include="FixedCapacityStackOfStrings.cpp" />
     <ClCompile Include="mainTest.cpp" />
+    <ClCompile Include="Test_AgrStack.cpp" />
     <ClCompile Include="Test_FixedCapacityStack.cpp" />
     <ClCompile Include="Test_FixedCapacityStackOfStrings.cpp" />
     <ClCompile Include="Test_ResizingArrayStack.h" />
