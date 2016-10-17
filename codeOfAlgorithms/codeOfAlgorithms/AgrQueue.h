@@ -12,7 +12,7 @@ public:
 	bool isEmpty();
 	int size();
 
-	void enqueue(T item);
+	void enqueue(T& item);
 	T dequeue();
 private:
 	struct Node

@@ -12,7 +12,7 @@ public:
 	bool isEmpty();
 	int size();
 
-	void push(T item);
+	void push(T& item);
 	T pop();
 
 private:

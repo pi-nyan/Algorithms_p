@@ -28,7 +28,7 @@ inline int aStack<T>::size()
 }
 
 template<typename T>
-inline void aStack<T>::push(T item)
+inline void aStack<T>::push(T& item)
 {
 	Node* oldfirst = _first;
 	_first = new Node;

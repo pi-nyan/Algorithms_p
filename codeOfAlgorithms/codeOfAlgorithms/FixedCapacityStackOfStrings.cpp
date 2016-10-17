@@ -10,7 +10,7 @@ FixedCapacityStackOfStrings::~FixedCapacityStackOfStrings()
 	delete[] s;
 }
 
-void FixedCapacityStackOfStrings::push(string item)
+void FixedCapacityStackOfStrings::push(string& item)
 {
 	s[N++] = item;
 }

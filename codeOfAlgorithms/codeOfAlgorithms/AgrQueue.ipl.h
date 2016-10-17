@@ -28,7 +28,7 @@ inline int aQueue<T>::size()
 }
 
 template<typename T>
-inline void aQueue<T>::enqueue(T item)
+inline void aQueue<T>::enqueue(T& item)
 {
 	Node* oldlast = _last;
 	_last = new Node;

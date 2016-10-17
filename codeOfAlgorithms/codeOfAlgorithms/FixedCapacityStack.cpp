@@ -13,7 +13,7 @@ FixedCapacityStack<T>::~FixedCapacityStack()
 }
 
 template<typename T>
-void FixedCapacityStack<T>::push(T item)
+void FixedCapacityStack<T>::push(T& item)
 {
 	_vs[N++] = item;
 }

@@ -12,7 +12,7 @@ public:
 	FixedCapacityStackOfStrings(int cap);
 	~FixedCapacityStackOfStrings();
 
-	void push(string item);
+	void push(string& item);
 	string pop();
 
 	bool isEmpty();

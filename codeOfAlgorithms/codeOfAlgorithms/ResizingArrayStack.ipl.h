@@ -30,7 +30,7 @@ inline int ResizingArrayStack<T>::size()
 }
 
 template<typename T>
-inline void ResizingArrayStack<T>::push(T item)
+inline void ResizingArrayStack<T>::push(T& item)
 {
 	if (N == _aryLength)
 	{

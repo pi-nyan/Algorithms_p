@@ -15,7 +15,7 @@ class Evaluate
 {
 public:
 	Evaluate(const Evaluate& eva) = delete;
-	Evaluate(string str);
+	Evaluate(string& str);
 	double expressionEvaluation();
 
 	~Evaluate();

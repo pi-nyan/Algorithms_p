@@ -5,7 +5,7 @@ Dijkstra¡¯s Two-Stack Algorithm for Expression Evaluation
 #include "Dijkstra's Two-Stack.h"
 
 
-Evaluate::Evaluate(string str):_str(str)
+Evaluate::Evaluate(string& str):_str(str)
 {
 }
 
