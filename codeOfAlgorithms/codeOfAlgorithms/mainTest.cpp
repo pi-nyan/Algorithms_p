@@ -3,15 +3,19 @@
 #include "Test_FixedCapacityStackOfStrings.h"
 #include "Test_AgrStack.h"
 #include "Test_AgrQueue.h"
+#include <crtdbg.h>
+
+static auto main_ret = 0;
 
 int main()
 {
-	//AlgorithmsTest::tResizingArrayStack();
-	//AlgorithmsTest::tFixedCapacityStack();
-	//AlgorithmsTest::tFixedCapacityStackOfStack();
+#ifdef _DEBUG
+	_CrtSetDbgFlag(_CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF);
+#endif
+	AlgorithmsTest::tResizingArrayStack();
+	AlgorithmsTest::tFixedCapacityStack();
+	AlgorithmsTest::tFixedCapacityStackOfStack();
 	AlgorithmsTest::tAgrStack();
 	AlgorithmsTest::tAgrQueue();
-	system("pause");
-	return 0;
-
+	return main_ret;
 }

@@ -20,6 +20,6 @@ void AlgorithmsTest::tAgrQueue()
 		}
 	}
 	cout << endl;
-	cout << tras.size() << " left on stack" << endl;
+	cout << tras.size() << " left on QUEUE" << endl;
 	fin.close();
 }

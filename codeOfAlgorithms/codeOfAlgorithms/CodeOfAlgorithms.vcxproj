@@ -124,6 +124,7 @@
   <ItemGroup>
     <ClInclude Include="AgrQueue.h" />
     <ClInclude Include="AgrQueue.ipl.h" />
+    <ClInclude Include="AgrSort.h" />
     <ClInclude Include="AgrStack.ipl.h" />
     <ClInclude Include="Dijkstra%27s Two-Stack.h" />
     <ClInclude Include="FixedCapacityStack.h" />
