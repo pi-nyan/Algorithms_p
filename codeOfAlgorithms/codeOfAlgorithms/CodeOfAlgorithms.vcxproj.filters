@@ -92,5 +92,8 @@
     <ClInclude Include="AgrSort.h">
       <Filter>ChapterTwo_sort</Filter>
     </ClInclude>
+    <ClInclude Include="Test_AgrSort.h">
+      <Filter>Test</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

@@ -133,6 +133,7 @@
     <ClInclude Include="ResizingArrayStack.ipl.h" />
     <ClInclude Include="AgrStack.h" />
     <ClInclude Include="Test_AgrQueue.h" />
+    <ClInclude Include="Test_AgrSort.h" />
     <ClInclude Include="Test_AgrStack.h" />
     <ClInclude Include="Test_FixedCapacityStack.h" />
     <ClInclude Include="Test_FixedCapacityStackOfStrings.h" />
