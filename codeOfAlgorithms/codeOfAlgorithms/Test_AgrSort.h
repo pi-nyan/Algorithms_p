@@ -33,6 +33,12 @@ namespace AlgorithmsTest
 			std::cout << x << " ";
 		std::cout << std::endl;
 
+		std::vector<int> vecq = { 3,1,12,4,8,6,11,15,2,5,13,10,14,7,9 };
+		AgrSort::quickSort(vecq);
+		for (auto& x : vecq)
+			std::cout << x << " ";
+		std::cout << std::endl;
+
 	}
 }
 #endif
