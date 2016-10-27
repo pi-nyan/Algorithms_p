@@ -85,6 +85,8 @@ namespace AgrSort
 	template<typename T>
 	inline void _exchange(T& _tFstOne, T& _tSecOne)
 	{
+		if (_tFstOne == _tSecOne)
+			return;
 		T tmp;
 		tmp = _tFstOne;
 		_tFstOne = _tSecOne;
@@ -114,7 +116,8 @@ namespace AgrSort
 	inline void _quickSort(std::vector<T>& _vec, int lo, int hi)
 	{
 		if (hi <= lo) return;
-		int j = _partition(_vec, lo, hi);
+		//int j = _partition(_vec, lo, hi);
+		int j = _partitionFromEnd(_vec, lo, hi);
 		_quickSort(_vec, lo, j - 1);
 		_quickSort(_vec, j + 1, hi);
 	}
@@ -123,16 +126,26 @@ namespace AgrSort
 	inline int _partition(std::vector<T>& _vec, int lo, int hi)
 	{
 		int i = lo, j = hi + 1;
-		T _v = _vec[lo];
+		T _pivot = _vec[lo];
 		while (true)
 		{
-			while (_less(_vec[++i], _v)) if (i == hi) break;
-			while (_less(_v, _vec[--j])) if (j == lo) break;
+			while (_less(_vec[++i], _pivot)) if (i == hi) break;
+			while (_less(_pivot, _vec[--j])) if (j == lo) break;
 			if (i >= j) break;
 			_exchange(_vec[i], _vec[j]);
 		}
 		_exchange(_vec[lo], _vec[j]);
 		return j;
+	}
+
+	template<typename T>
+	inline int _partitionFromEnd(std::vector<T>& _vec, int lo, int hi)
+	{
+		int _k = lo, _pivot = _vec[hi];
+		for (int i = lo; i < hi; i++)
+			if (_vec[i] <= _pivot)	_exchange(_vec[i], _vec[_k++]);
+		_exchange(_vec[_k], _vec[hi]);
+		return _k;
 	}
 
 }
